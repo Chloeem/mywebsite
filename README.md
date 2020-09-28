@@ -1,2 +1,2 @@
 # mywebsite
- Website design for my Code Nation project
+ Website design for the Code Nation boot camp project.
