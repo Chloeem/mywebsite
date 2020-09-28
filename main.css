@@ -29,6 +29,11 @@ footer {
     position: fixed;
 }
 
+footer:hover {
+    background-color: hotpink;
+    transition-duration: 0.4s;
+}
+
 a:hover,
 a:link,
 a:visited {
@@ -70,9 +75,9 @@ a:visited {
     text-decoration: none;
     color: #fdfffc;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 12px;
     padding-bottom: 15px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 
 .nav-bar1 a:visited,
