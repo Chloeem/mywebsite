@@ -1,15 +1,10 @@
+/* Resets  */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-#page-one {
-    background-image: url(images/dark-paint-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 html {
     scroll-behavior: smooth;
@@ -40,7 +35,14 @@ a:visited {
     color: #fdfffc
 }
 
+#page-one {
+    background-image: url(images/dark-paint-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+/* Nav transparent background */
 #home-nav1 {
     background-color: rgba(0, 255, 0, 0);
 }
@@ -49,9 +51,8 @@ a:visited {
     background-color: rgba(0, 255, 0, 0);
 }
 
-/* nav bar 1 */
+/* nav bar 1 - icons */
 .nav-bar1 {
-    /* display: block; */
     position: fixed;
     width: 100%;
     top: 0;
@@ -65,10 +66,6 @@ a:visited {
     transition-duration: 0.4s;
 }
 
-.nav-bar1:hover {
-    background-color: none;
-}
-
 .nav-bar1 a {
     text-decoration: none;
     color: #fdfffc;
@@ -78,22 +75,17 @@ a:visited {
     padding-left: 10px;
 }
 
-.nav-bar1 a:hover {
-    color: yellow;
-}
-
 .nav-bar1 a:visited,
 .nav-bar1 a:link {
     color: #fdfffc;
 }
 
-.nav-bar1 a:active {
-    background-color: yellow;
-    color: #191919;
+.nav-bar1 a:hover {
+    background-color: hotpink;
 }
 
 
-/* nav bar 2 */
+/* nav bar 2 - normal menu */
 .nav-bar2 {
     /* display: block; */
     position: fixed;
@@ -107,10 +99,6 @@ a:visited {
     display: inline-block;
     transition-duration: 0.4s;
 }
-
-/* .nav-bar2:hover {
-    background-color: hotpink;
-} */
 
 .nav-bar2 a {
     text-decoration: none;
@@ -130,25 +118,33 @@ a:visited {
     color: #fdfffc;
 }
 
-.nav-bar2 a:hover {
-    color: yellow;
-}
-
 .nav-bar2 a:visited {
     color: #fdfffc;
 }
 
 .nav-bar2 a:active {
-    background-color: yellow;
+    background-color: hotpink;
     color: #191919;
+}
+
+.nav-bar2 a:hover {
+    background-color: hotpink;
 }
 
 /* Homepage 'hi im chloe' greeting */
 .centered {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.photo-position {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(10deg);
 }
 
 .greeting {
@@ -162,8 +158,44 @@ a:visited {
 .greeting2 {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    padding-top: 6%;
+    padding-top: 8%;
     float: left;
+}
+
+.me-photo { 
+    z-index: -1;
+    margin-bottom: 100px;
+}
+
+.me-photo2 { 
+    padding-left: 15%;
+    padding-bottom: -15%; 
+    z-index: -1;
+    
+    top: 220px;
+    left: 1000px;
+    position: absolute; 
+}
+
+button {
+    background-color: #191919;
+    border: 2px solid #fdfffc;
+    border-radius: 8px;
+    color: #fdfffc;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    transition-duration: 0.4s;
+    margin-top: 120px;
+}
+
+button:hover {
+    background-color: hotpink;
+    color: #fdfffc;
+    border-color: hotpink;
 }
 
 /* Units main page with buttons */
@@ -213,26 +245,6 @@ a:visited {
     border: 2px solid hotpink;
 }
 
-/* #smiley {
-    font-size: 60px;
-    color: yellow;
-    border: 2px solid #fdfffc;
-    padding: 8px 75px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Fredoka One', cursive;
-    transition-duration: 0.4s;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-#smiley:hover {
-    background-color: yellow;
-    border: 2px solid yellow;
-    color: #191919;
-} */
-
 
 /* Units selection box */
 .info-box {
@@ -258,31 +270,6 @@ a:visited {
     border-radius: 18px;
 }
 
-
-/* .middle {
-    background-image: url(images/white-background.jpg);
-    float: left;
-    width: 32.7%;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    margin-top: 7px;
-    margin-right: 7px;
-    text-align: center;
-}
-
-.right {
-    background-image: url(images/white-background.jpg);
-    float: left;
-    width: 33%;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    margin-top: 7px;
-    text-align: center;
-} */
 
 .h2-home {
     font-family: 'Fredoka One', cursive;
@@ -337,26 +324,6 @@ a:visited {
     opacity: 0;
 }
 
-button {
-    background-color: #191919;
-    border: 2px solid #fdfffc;
-    border-radius: 8px;
-    color: #fdfffc;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Fredoka One', cursive;
-    transition-duration: 0.4s;
-    margin-top: 120px;
-}
-
-button:hover {
-    background-color: hotpink;
-    color: #fdfffc;
-    border-color: hotpink;
-}
 
 /* about page */
 .main-about {
@@ -420,6 +387,40 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
+/* Contact page */
+.contact-photo {
+    top: 40%;
+    left: 30%;
+    transform: translate(40%, 55%);
+    border-radius: 90px;
+}
+
+.contact-copy {
+    transform: translate(52%, -120%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 55px;
+    color: hotpink;
+}
+
+.contact-h5 {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    padding-top: 40px;
+
+}
+
+.contact-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
 
 @media only screen and (max-width:620px) {
 
@@ -431,16 +432,6 @@ button:hover {
     }
 }
 
-
-/* .me-photo { */
-/* padding-left: 15%; */
-/* padding-bottom: -15%; */
-/* z-index: -1;
-    transform: rotate(12deg);
-    top: 220px;
-    left: 1000px;
-    position: absolute;  */
-/* } */
 
 
 /* @media only screen and (max-width: 1000px) {
